@@ -1,0 +1,195 @@
+
+body {
+    background-color: #CDDEE2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    color: #2d2d30;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+/*Navbar superior*/
+.logo{
+    height: 75px;
+    cursor: pointer;
+}
+.menu-icon{
+    height: 75px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+
+}
+nav ul{
+    display: flex;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    flex: 1;
+    border: #000000 ;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 26px;
+    text-align: center;
+    transition: scale 0.5s;
+    color: black
+}
+nav ul li a:hover{
+    color:rgb(78, 78, 78);
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    float: center;
+    align-items: center;
+}
+.top{
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+/*termina navbar */
+
+/*comienza slider*/
+.slider-frame{
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display:flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 20s infinite alternate linear;
+}	
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+width: 100%;
+}
+
+@keyframes cambio{
+	0% { margin-left: 0;}
+	20% { margin-left: 0;}
+
+	25% { margin-left: -100%;}
+	45% { margin-left: -100%;}
+	
+	50% { margin-left: -200%;}
+	70% { margin-left: -200%;}
+
+}
+/* termina slider*/
+
+/* comienza footer*/
+
+footer {
+    width: 100%;
+    display: inline-block;
+    height: 70px;
+    background-color: #999;
+}
+.copyright {
+  width: 70%;
+  float: left;
+  height: 70px;
+  margin-left: 2%;
+  
+}
+.copyright p {
+    color: white;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.footer-botones{
+    display: flex;
+    width: 28%;
+    float: right;
+    height: 70px;
+}
+
+.footer-botones a{
+    flex: 1;
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+/*footer termina*/
+
+/*categoria grid*/
+.container-grid{
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.categoria-grid {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categoria-item {
+    flex: 0 24%;
+    text-decoration: none;
+    color: rgb(16, 17, 80);
+    text-align: center;
+    line-height: 30px;
+}
+.categoria-image{
+    border-radius: 50%;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(22, 85, 85);
+    border-radius: 50%;
+    transition: transform .2s;
+}
+.categoria-image:hover{
+    transform: scale(1.1);
+}
+
+/* termina grid */
+
+/* comienza bottom */
+.bottom{
+    padding-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+}
+/* termina bottom */
