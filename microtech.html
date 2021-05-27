@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Microtech</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/javascript.js" async></script>
+
+<!--Links para FlexSlider-->
+<link rel="stylesheet" href="Flexslider/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="Flexslider/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+</head>
+
+    <body>
+        <div class="page-container">
+        <div class="content-container">
+        <a id="top"></a>
+        <!-- contenido inicia aqui -->
+		<div id="reloj">
+			00 : 00 : 00
+		</div>
+        <div class="top">
+                <div class="navbar">   
+                    <img src="img/nombre.png" class="logo">
+                        <nav>           
+                            <ul>
+                                <li><a href="#">Categoria</a></li>
+                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="#">Novedades</a></li>
+                                <li><a href="#">Soporte</a></li>
+                                <li><a href="#">Acerca de</a></li>
+                                </li>
+                            </ul>
+                        </nav>
+                     <input type="image" src="img/usuario.png" onclick = "openForm()" class="menu-icon"/>
+                    <img src="img/carrito.png" class="menu-icon">
+               </div>
+			   <div class="login">
+					<div class= "form-popup"id="myForm">
+					<div id="cont">
+						<div id="login" class="comm">
+							<h3>Iniciar sesion</h3>
+
+							<input id="se" type="email" placeholder="Email" required/>
+							<input id="sp" type="password" placeholder="Contraseña" required/>
+							<input type="submit" onclick="login()" value="Iniciar sesión"/>
+					</div>
+					<div id="registro" class="comm">
+						<h3>Registro</h3>
+
+							<input id="re" type="email" placeholder="Email" required/>
+							<input id="rp" type="password" placeholder="Contraseña" required/>
+							<input id="rrp" type="password" placeholder="Re escribe contraseña" required/>
+							<input type="submit" onclick="register()" value="Registrar"/>
+
+					</div >
+						<div id="forgot" class="comm">
+							<h3>¿Olvidaste contraseña?</h3>
+							<div>
+								<input id="fe" type="email" placeholder="Email" required/>
+								<input type="submit" onclick="forgot()" value="Enviar"/>
+							</div>
+						</div>
+							<button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+					</div>
+				</div>
+            <div class="container">
+                <h2>Todo para tu computadora</h2>
+            </div>
+
+				</div>
+        <div class = "container-grid">
+            <div class = "categoria-grid">
+            <!-- Aqui vamos a meter los circulos con imagenes de componentes-->
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/cpu.jpg" class="categoria-image">
+                    </div>
+                CPU
+                </a>
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/motherboard.jpg" class="categoria-image">
+                    </div>
+                Tarjetas madre
+                </a>
+
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/ram.jpg" class="categoria-image">
+                    </div>
+                Memorias RAM
+                </a>
+
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/gpu.jpg" class="categoria-image">
+                    </div>
+                Tarjetas de video
+                </a>
+
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/ssd.jpg" class="categoria-image">
+                    </div>
+                Almacenamiento
+                </a>
+
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/case.jpg" class="categoria-image">
+                    </div>
+                Gabinete
+                </a>
+
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/psu.jpg" class="categoria-image">
+                    </div>
+                Fuentes de poder
+                </a>
+
+                <a href ="#" class = "categoria-item">
+                    <div >
+                        <img src="img/mouse.jpg" class="categoria-image">
+                    </div>
+                Perifericos
+                </a>
+            </div>
+        </div>
+
+
+        <div class = "slider-frame">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src ="img/1.jpg" alt= "" width="100" height="800" ></li>
+                    <li><img src ="img/2.jpg" alt= "" width="100" height="800" ></li>
+                    <li><img src ="img/3.jpg" alt= "" width="100" height="800" ></li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class = "bottom">
+		<div class = "historia">
+                <!-- Aqui vamos a poner un bloque de texto con cosas para que el mapa no este tan grande-->
+			<p>
+				Microtech es una tienda de componentes para computadoras que se preocupa por brindar los mejores
+ 				precios a los clientes, el mejor servicio para ellos para que se sientan con confianza al comprar en línea.
+				Contamos con una gran variedad de productos a precios competitivos.				
+			</p> 
+	
+			<p>
+				Si se requiere alguna cotización o si tiene alguna duda se puede comunicar con nosotros en el apartado
+				de contacto donde está nuestro correo electrónico.
+			</p>
+			<div class ="eslogan">
+				<p>
+					<h3>Si no le convence el producto en los primeros 30 días de su compra le reembolsaremos tu dinero</h3>
+				</p>
+            </div>
+		</div>
+		<div class = "mapa">
+                	<div style="width: 100%">
+                    		<iframe width="110%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Reforma%20esquina%20con,%20Av.%20Plan%20de%20Ayala%20312,%20Ley%2057,%2083100%20Hermosillo,%20Son.+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    		</iframe>			
+                	</div>
+            	</div>
+        </div>
+        </div>
+          <div class="footer-container">
+                   <div class="footer-container">
+            <footer>
+            <div class="copyright">
+                <p>&copy 2021 - Microtech S.A. de C.V.</p>
+            </div>
+
+            <div class="footer-botones">
+                <a href="#top" class="support">Ir arriba</a>
+                <a href="contacto.html" class="support">Contacto</a>
+            </div>
+        </footer>
+        </div>
+        <!-- contenido termina aqui -->
+        </div>
+    </body>
+</html>
+
